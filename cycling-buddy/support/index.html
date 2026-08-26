@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>骑序（PedalState）支持</title>
+    <style>
+      :root {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC",
+          sans-serif;
+        color: #15251d;
+        background: #f3f7f4;
+      }
+      body {
+        margin: 0;
+      }
+      main {
+        box-sizing: border-box;
+        max-width: 760px;
+        min-height: 100vh;
+        margin: 0 auto;
+        padding: 48px 24px 72px;
+      }
+      h1,
+      h2 {
+        line-height: 1.25;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(2rem, 8vw, 3.5rem);
+      }
+      h2 {
+        margin-top: 32px;
+        font-size: 1.3rem;
+      }
+      p,
+      li {
+        line-height: 1.7;
+      }
+      a {
+        color: #176b3a;
+      }
+      .summary {
+        margin: 24px 0;
+        padding: 20px;
+        border: 1px solid #b9d8c5;
+        border-radius: 18px;
+        background: #e8f5ed;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          color: #e9f4ed;
+          background: #101813;
+        }
+        a {
+          color: #75d49b;
+        }
+        .summary {
+          border-color: #365c45;
+          background: #17291e;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>骑序（PedalState）支持</h1>
+      <section class="summary">
+        骑序根据 Apple 健康中已有的骑行与恢复数据，在设备本地生成可解释的训练建议。
+        v1.0 不自行记录骑行，也不使用自建账号或服务器。
+      </section>
+
+      <h2>常见问题</h2>
+      <ul>
+        <li>没有今日建议：打开 App，确认已连接 Apple 健康并允许所需的只读权限。</li>
+        <li>Watch 未更新：保持 iPhone 与 Apple Watch 已配对，打开 iPhone App 后重试。</li>
+        <li>地图为空：只有 Apple 健康中包含路线的户外骑行才能显示地图，地图图像可能需要网络。</li>
+        <li>数据异常：在“我的 → 方法与隐私”中重建本地缓存；这不会删除 Apple 健康源数据。</li>
+      </ul>
+
+      <h2>反馈与支持</h2>
+      <p>
+        请在
+        <a href="https://github.com/cocolord/cycling-buddy/issues">GitHub Issues</a>
+        描述问题、设备型号和系统版本。请勿上传健康数据、完整诊断日志、精确路线或其他个人敏感信息。
+      </p>
+
+      <h2>隐私与安全</h2>
+      <p>
+        查看<a href="../privacy/">隐私政策</a>。骑序不是医疗器械，也不提供医疗诊断；出现胸痛、
+        晕厥、明显心悸或呼吸困难时，请停止骑行并寻求专业医疗帮助。
+      </p>
+    </main>
+  </body>
+</html>
